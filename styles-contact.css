@@ -1,0 +1,239 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("photo-1614822658430-554a10e4fed4.jpeg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	
+	
+}
+
+.center {
+    width: 50%;
+	max-width: 600px;
+	min-width: 400px;
+	padding: 4%;
+    margin: 100px auto;
+ 	background: rgba(240, 236, 228, 0.87);/*this uses opacity of 75% for the background color*/
+	text-align: center;
+	border: 0px white;
+	border-radius: 85px;
+}
+
+   
+#logo {
+    margin-bottom: 16px;
+	border: 0px;
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2.1em;
+    margin: 0px auto 15px auto;
+    color: black;
+	padding-top: 3px;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.4em;
+    line-height: 1.5;
+    color: black;
+    padding-top: 2px;
+    margin: 0px auto 15px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+    line-height: 1.2;
+    color: black;
+	padding-top: 26px;
+}
+
+nav{ 
+	font-family:'Quicksand', sans-serif;
+	font-size: 1.4em;
+	width: 600px;  
+	margin: 0 auto; 
+	border: ridge plum; 
+	border-width: 0px 0;
+	text-align: center;
+	margin-top: 1.5em;
+	position: fixed;
+	top: 0;	
+	right: 0;
+	background-color: rgba(240, 236, 228, 0.87);
+	border-radius: 8px;
+}
+
+nav li {
+	display: inline; 
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: black;
+	text-decoration: wavy
+
+}
+    
+a:hover {
+	color: black;
+	background: rgb(211, 149, 211);
+}
+/* Code for cards */
+
+/* sets everything to zero */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .cardphoto img {
+    display: block;
+    max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+  }
+ 
+  /* make the Section class cards here.  */
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+	margin-top: 95px;
+  }
+ 
+  /* make the card flex. The default is row so change flex direction to vertical. */
+  .card {
+    background-color: rgba(255, 255, 255, 0.89);
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 2.9px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.11);
+    position: relative;
+    top: 0;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: 6px;
+    box-shadow: 0 4px 5px rgb(255, 255, 255);
+  }
+ 
+  .cardphoto {
+    max-height: 240px;
+    overflow: hidden;
+  }
+ 
+  .cardarticle {
+    padding: 2.2rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardH1 {
+    font-size: 2rem;
+    margin: 0;
+    color: black;
+	text-align: center;
+  }
+ 
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+ 
+  .card footer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3{
+      color:black;
+  }
+ 
+  .card p {
+      color: rgb(104, 103, 103);
+  }
+
+  .center {
+	  text-align: center;
+  }
